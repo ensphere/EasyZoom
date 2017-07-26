@@ -12,6 +12,8 @@
 
 .easyzoom img {
 	vertical-align: bottom;
+	max-width: none;
+	max-height: none;
 }
 
 .easyzoom.is-loading img {
