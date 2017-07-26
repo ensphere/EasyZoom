@@ -1,5 +1,5 @@
 {
-  "name": "easyzoom",
+  "name": "easyzoom-ensphere",
   "version": "2.5.0",
   "description": "EasyZoom is an elegant, highly optimised jQuery image zoom and panning plugin based on the original work by Alen Grakalic.",
   "keywords": [
@@ -12,11 +12,14 @@
     {
       "name": "Matt Hinchliffe",
       "homepage": "http://maketea.co.uk"
+    },
+    {
+      "name": "Luke Snowden"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:i-like-robots/EasyZoom.git"
+    "url": "https://github.com/ensphere/EasyZoom.git"
   },
   "dependencies": {
     "jquery": ">=1.7"
