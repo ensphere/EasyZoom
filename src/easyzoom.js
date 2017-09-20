@@ -26,6 +26,9 @@
         // The time (in milliseconds) to display the error notice.
         errorDuration: 2500,
 
+        // For mobile use
+        enableAtWidth: 768,
+
         // Attribute to retrieve the zoom image URL from.
         linkAttribute: 'href',
 
@@ -140,8 +143,10 @@
         this.isMouseOver = true;
 
         if (!touches || touches.length == 1) {
-            e.preventDefault();
-            this.show(e, true);
+            if( $(window).width() >= this.opts.enableAtWidth ) {
+                e.preventDefault();
+                this.show(e, true);
+            }
         }
     };
 
@@ -153,8 +158,10 @@
     EasyZoom.prototype._onMove = function(e) {
         if (!this.isOpen) return;
 
-        e.preventDefault();
-        this._move(e);
+        if( $(window).width() >= this.opts.enableAtWidth ) {
+            e.preventDefault();
+            this._move(e);
+        }
     };
 
     /**
